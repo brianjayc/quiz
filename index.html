@@ -6,19 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML/CSS Quiz</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 </head>
 <body>
   <header>
     <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamp logo">
-    <h1>HTML/CSS Quiz</h1>
-    <nav>
-      <ul>
-        <li>INFO</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </nav>
+    <h1>HTML / CSS Quiz</h1>
+    <ul id="nav">
+      <li><a href="#student-info">INFO</a></li>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+    </ul>
   </header>
+  <main>
+    <form action="">
+      <h2 id="student-info">Student Info</h2>
+      <hr>
+      <section>
+        <div class="info">
+          <label>Name:</label>
+          <input type="text">
+        </div>
+        <div class="info">
+          <label>Email:</label>
+          <input type="text">
+        </div>
+        <div class="info">
+          <label>DOB:</label>
+          <input type="date">
+        </div>
+      </section>
+      <h2 id="html">HTML</h2>
+      <hr>
+      <section>
+        <div class="questions">
+          <p>Question #1</p>
+          <p>The legend element represents a caption for the content of its parent fieldset element</p>
+          <label><input type="radio" name="q1"> True</label>
+          <label><input type="radio" name="q1"> False</label>
+        </div>
+        <div class="questions">
+          <p>Question #2</p>
+          <p>A label element nesting an input element is required to have a for attribute with the same value as the input's id</p>
+          <label><input type="radio" name="q2"> True</label>
+          <label><input type="radio" name="q2"> False</label>
+        </div>
+      </section>
+      <h2 id="css">CSS</h2>
+      <hr>
+      <section>
+      <div class="questions">
+        <p>Are you a frontend developer?</p>
+        <select>
+          <option selected disabled>Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div class="questions">
+        <p>Do you have any questions:</p>
+        <textarea cols="30" rows="5"></textarea>
+      </div>
+    </section>
+    <button id="submit">Submit</button>
+    </form> 
+  </main>
+  <footer>
+    <p>freeCodeCamp</p>
+    <p>San Francisco</p>
+    <p>California</p>
+    <p>USA</p>
+  </footer>
 </body>
 </html>
 
